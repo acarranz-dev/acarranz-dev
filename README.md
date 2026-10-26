@@ -32,14 +32,13 @@ data center operations**, where low-level knowledge and AI meet.
 
 ### Smart Routing
 **A command-line tool for running and routing local language models.**
-It runs on top of [Ollama](https://ollama.com), so everything works offline on
-your own machine. You create bots, give each one a role and a model, and the CLI
+Models run locally on your own machine, with no data sent to external services. You create bots, give each one a role and a model, and the CLI
 sends every request to the right one. It ships with 12 agent profiles
 (developer, debugger, researcher, technical writer, etc.) and 7 "deep thinking"
 modes (planning, debate, error debugging, step-by-step reasoning) that run an
 analysis pass before the final answer.
 
-`Python` `Ollama` `LLM` `CLI` · Status: finishing v1.0
+`Python` `LLM` `CLI` · Status: finishing v1.0
 
 ### Agentic Infrastructure
 **A network of AI agents, each living in its own short-lived Docker container.**
@@ -50,7 +49,7 @@ agent tree. Agents exchange results through a strict JSON contract, a dedicated
 verifier agent checks the work of the others, and every container is destroyed
 when its task is done, so each one always works with a small, clean context.
 
-`Docker` `Redis` `Embeddings` `k-means` `Multi-agent` · Status: in development
+`Docker` `Embeddings` `k-means` `Multi-agent` · Status: in development
 
 ### Green Islands
 **Detecting urban green areas from satellite images.**
@@ -120,41 +119,32 @@ At 42, the next step is the **Artificial Intelligence branch**.
 
 - **Client websites in production**: booking systems for appointment-based
   businesses, an online shop and an author's website, built with Next.js.
-- **Demos and experiments**: 3D body scanning from a webcam, a Steam market
-  monitor, browser games and Godot prototypes.
+- **Demos and experiments**: a Steam market monitor and browser games.
 
 ---
 
 ## Technologies and concepts
 
-Everything listed here appears in my own projects. The left column is the area, the right column is what I have actually used and where.
+Only what I can explain and use on my own.
 
 | Area | Technologies and concepts |
 |:--|:--|
-| **Programming languages** | **C** (the whole 42 Common Core) · **C++** (ft_irc, C++ modules, game server modules) · **Python** (Smart Routing, data science, computer vision, quantum labs, bots) · **TypeScript / JavaScript** (web apps, Node.js backends, browser games) · **Rust** (async client with signature verification: tokio, reqwest, ring) · **Lua** and **GDScript** (game scripting) · **Bash** (automation and agent orchestration) · **SQL** |
-| **Local LLMs and agents** | **Ollama** (Llama 3.2) · model selection and request routing · multi-agent orchestration · agent role templates · cross-verification between agents · strict JSON contracts between agents · **Claude Code** · **MCP** (Model Context Protocol) servers · prompt engineering · LLM APIs: **Anthropic Claude**, **Google Gemini** |
-| **Machine learning** | **scikit-learn** · unsupervised clustering (**K-Means**, **DBSCAN**) · **embeddings** with sentence-transformers · vector similarity (cosine distance) · **PyTorch** · timm · **Ultralytics YOLO** · knowledge graphs (**Graphiti**, **FalkorDB**) |
-| **Computer vision and 3D** | **OpenCV** · **SMPL-X** human body models · trimesh · pyrender · PyOpenGL · webcam capture · raycasting · **Three.js** |
-| **Data and science** | **NumPy** · **Matplotlib** · **Jupyter** · **rasterio** (GeoTIFF satellite images) · Landsat and the **NDVI** vegetation index · remote sensing · **Qiskit** / Qiskit Aer (quantum random numbers, Bell states) · PDF reports with ReportLab |
-| **Backend and APIs** | **Node.js** · **Express** · **Next.js** API routes and server actions · **Flask** · **REST APIs** · authentication (**Auth.js / NextAuth**, bcrypt, **TOTP 2FA**, email codes) · payments with **Stripe** · email with Resend and Nodemailer · scheduled jobs (APScheduler) · QR and PDF generation |
-| **Frontend** | **React** · **Next.js** (App Router) · **Tailwind CSS** · **Vite** · PWA (offline apps) · **Three.js** · Konva · Matter.js (2D physics) · maps with **MapLibre** and Leaflet · Zustand · multi-language sites (i18n) |
-| **Databases** | **PostgreSQL** · **MySQL / MariaDB** · **SQLite** · **Redis** (task queues) · **Prisma** ORM · IndexedDB |
-| **Infrastructure and DevOps** | **Docker** and **Docker Compose** · short-lived containers · shared base images · **NGINX** with TLS · Gunicorn · **Linux** (Debian, Ubuntu, WSL2) · virtual machines · **AWS S3** · **Vercel** · **GitHub Actions** · **Git** · Make and CMake |
-| **Testing and automation** | **Playwright** · Puppeteer · end-to-end tests · web scraping · automation bots |
-| **Systems concepts** | memory management and pointers · processes (`fork`, `execve`) · pipes and redirections · signals · file descriptors · **threads and mutexes** · race conditions · **sockets and TCP/IP** · non-blocking I/O (`poll`) · IP addressing and subnetting · algorithms and complexity · object-oriented programming |
+| **Programming languages** | **C** (the whole 42 Common Core) · **C++** (ft_irc, C++ modules) · **Python** (Smart Routing, data science, quantum computing labs) · **TypeScript / JavaScript** (web apps and Node.js backends) · **Bash** |
+| **Artificial intelligence** | **Large language models (LLM)**: running them locally and through APIs, prompt design and agent roles · **multi-agent systems**: splitting tasks between agents and cross-verification · **embeddings** and vector similarity (cosine distance) · **clustering** with scikit-learn (K-Means, DBSCAN) · **PyTorch** · **Claude Code** and **MCP** (Model Context Protocol) |
+| **Data and science** | **NumPy** · **Matplotlib** · **Jupyter** · satellite images (Landsat) and the **NDVI** vegetation index · quantum computing with **Qiskit** (qubits, gates, Bell states) |
+| **Web and backend** | **React** · **Next.js** · **Tailwind CSS** · **REST APIs** with **Node.js / Express** and **Flask** · **authentication** (sessions, password hashing, 2FA) · payments with **Stripe** |
+| **Infrastructure and DevOps** | **Docker** and **Docker Compose** · **NGINX** with TLS · **Linux** · **Git** and **GitHub** · **GitHub Actions** · **Vercel** · **AWS S3** |
+| **Systems concepts** | **memory and pointers** (stack, heap, leaks) · **processes and signals** (`fork`, `execve`, pipes, redirections) · **threads and mutexes** (race conditions) · **sockets and networking** (TCP/IP, `poll`, IP addressing and subnets) |
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,py,ts,js,rust,lua,bash,linux,debian,ubuntu,cmake,git,github,githubactions&perline=15" alt="Languages and systems" /><br/>
-  <img src="https://skillicons.dev/icons?i=pytorch,sklearn,opencv,anaconda,flask,nodejs,express,nextjs,react,tailwind,vite,threejs,godot&perline=15" alt="AI, backend and frontend" /><br/>
-  <img src="https://skillicons.dev/icons?i=prisma,postgres,mysql,sqlite,redis,docker,nginx,aws,vercel,vscode&perline=15" alt="Data and infrastructure" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,py,ts,js,bash,linux,git,github,githubactions,docker,nginx&perline=12" alt="Languages, systems and infrastructure" /><br/>
+  <img src="https://skillicons.dev/icons?i=pytorch,sklearn,nodejs,express,flask,nextjs,react,tailwind,aws,vercel&perline=12" alt="AI, web and cloud" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" alt="Ollama" />
-  <img src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white" alt="Claude" />
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini" />
+  <img src="https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code" />
+  <img src="https://img.shields.io/badge/MCP-000000?style=flat-square" alt="MCP" />
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter" />
   <img src="https://img.shields.io/badge/Qiskit-6929C4?style=flat-square&logo=qiskit&logoColor=white" alt="Qiskit" />
   <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" alt="Stripe" />
-  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" />
 </p>
