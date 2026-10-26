@@ -2,7 +2,7 @@
 
 # Andreu Carranza
 
-**Software developer from 42 Barcelona. I build local, multi-agent AI systems, from C, Linux and networking up to LLM orchestration, embeddings and containerised infrastructure.**
+**C, C++ and Python developer trained at 42 Barcelona. I build systems where several AI agents work together.**
 
 **English** · [Català](README.ca.md) · [Español](README.es.md)
 

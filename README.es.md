@@ -2,7 +2,7 @@
 
 # Andreu Carranza
 
-**Desarrollador formado en 42 Barcelona. Construyo sistemas de IA multiagente que funcionan en local, desde C, Linux y redes hasta la orquestación de LLM, los embeddings y la infraestructura con contenedores.**
+**Programador en C, C++ y Python formado en 42 Barcelona. Desarrollo sistemas donde varios agentes de IA colaboran entre sí.**
 
 [English](README.md) · [Català](README.ca.md) · **Español**
 
