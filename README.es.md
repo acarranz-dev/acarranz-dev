@@ -2,7 +2,7 @@
 
 # Andreu Carranza
 
-**I+D en IA · Sistemas agénticos · Programación de sistemas en 42 Barcelona**
+**Desarrollador formado en 42 Barcelona. Construyo sistemas de IA multiagente que funcionan en local, desde C, Linux y redes hasta la orquestación de LLM, los embeddings y la infraestructura con contenedores.**
 
 [English](README.md) · [Català](README.ca.md) · **Español**
 
@@ -127,8 +127,36 @@ En 42, el siguiente paso es la **rama de Inteligencia Artificial**.
 
 ---
 
-## Herramientas
+## Tecnologías y conceptos
+
+Todo lo que aparece aquí sale en mis propios proyectos. A la izquierda está el área y a la derecha lo que he usado de verdad y dónde.
+
+| Área | Tecnologías y conceptos |
+|:--|:--|
+| **Lenguajes de programación** | **C** (todo el Common Core de 42) · **C++** (ft_irc, módulos de C++, módulos de servidor de juego) · **Python** (Smart Routing, ciencia de datos, visión por computador, laboratorios cuánticos, bots) · **TypeScript / JavaScript** (aplicaciones web, backends con Node.js, juegos de navegador) · **Rust** (cliente asíncrono con verificación de firmas: tokio, reqwest, ring) · **Lua** y **GDScript** (scripts de juegos) · **Bash** (automatización y orquestación de agentes) · **SQL** |
+| **LLM locales y agentes** | **Ollama** (Llama 3.2) · selección de modelo y enrutamiento de peticiones · orquestación multiagente · plantillas de roles de agente · verificación cruzada entre agentes · contratos JSON estrictos entre agentes · **Claude Code** · servidores **MCP** (Model Context Protocol) · ingeniería de prompts · APIs de LLM: **Anthropic Claude**, **Google Gemini** |
+| **Aprendizaje automático** | **scikit-learn** · clustering no supervisado (**K-Means**, **DBSCAN**) · **embeddings** con sentence-transformers · similitud vectorial (distancia coseno) · **PyTorch** · timm · **Ultralytics YOLO** · grafos de conocimiento (**Graphiti**, **FalkorDB**) |
+| **Visión por computador y 3D** | **OpenCV** · modelos de cuerpo humano **SMPL-X** · trimesh · pyrender · PyOpenGL · captura por webcam · raycasting · **Three.js** |
+| **Datos y ciencia** | **NumPy** · **Matplotlib** · **Jupyter** · **rasterio** (imágenes de satélite GeoTIFF) · Landsat y el índice de vegetación **NDVI** · teledetección · **Qiskit** / Qiskit Aer (números aleatorios cuánticos, estados de Bell) · informes PDF con ReportLab |
+| **Backend y APIs** | **Node.js** · **Express** · rutas de API y server actions de **Next.js** · **Flask** · **APIs REST** · autenticación (**Auth.js / NextAuth**, bcrypt, **2FA TOTP**, códigos por email) · pagos con **Stripe** · email con Resend y Nodemailer · tareas programadas (APScheduler) · generación de QR y PDF |
+| **Frontend** | **React** · **Next.js** (App Router) · **Tailwind CSS** · **Vite** · PWA (aplicaciones sin conexión) · **Three.js** · Konva · Matter.js (física 2D) · mapas con **MapLibre** y Leaflet · Zustand · webs multidioma (i18n) |
+| **Bases de datos** | **PostgreSQL** · **MySQL / MariaDB** · **SQLite** · **Redis** (colas de tareas) · ORM **Prisma** · IndexedDB |
+| **Infraestructura y DevOps** | **Docker** y **Docker Compose** · contenedores desechables · imágenes base compartidas · **NGINX** con TLS · Gunicorn · **Linux** (Debian, Ubuntu, WSL2) · máquinas virtuales · **AWS S3** · **Vercel** · **GitHub Actions** · **Git** · Make y CMake |
+| **Pruebas y automatización** | **Playwright** · Puppeteer · pruebas end-to-end · web scraping · bots de automatización |
+| **Conceptos de sistemas** | gestión de memoria y punteros · procesos (`fork`, `execve`) · pipes y redirecciones · señales · descriptores de fichero · **hilos y mutex** · condiciones de carrera · **sockets y TCP/IP** · E/S no bloqueante (`poll`) · direccionamiento IP y subredes · algoritmos y complejidad · programación orientada a objetos |
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,python,ts,bash,linux,docker,git,nextjs,postgres&perline=10" alt="C, C++, Python, TypeScript, Bash, Linux, Docker, Git, Next.js, PostgreSQL" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,py,ts,js,rust,lua,bash,linux,debian,ubuntu,cmake,git,github,githubactions&perline=15" alt="Languages and systems" /><br/>
+  <img src="https://skillicons.dev/icons?i=pytorch,sklearn,opencv,anaconda,flask,nodejs,express,nextjs,react,tailwind,vite,threejs,godot&perline=15" alt="AI, backend and frontend" /><br/>
+  <img src="https://skillicons.dev/icons?i=prisma,postgres,mysql,sqlite,redis,docker,nginx,aws,vercel,vscode&perline=15" alt="Data and infrastructure" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" alt="Ollama" />
+  <img src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white" alt="Claude" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini" />
+  <img src="https://img.shields.io/badge/Qiskit-6929C4?style=flat-square&logo=qiskit&logoColor=white" alt="Qiskit" />
+  <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" alt="Stripe" />
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" />
 </p>

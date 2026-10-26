@@ -2,7 +2,7 @@
 
 # Andreu Carranza
 
-**R+D en IA · Sistemes agèntics · Programació de sistemes a 42 Barcelona**
+**Desenvolupador format a 42 Barcelona. Construeixo sistemes d'IA multiagent que funcionen en local, des del C, Linux i les xarxes fins a l'orquestració de LLM, els embeddings i la infraestructura amb contenidors.**
 
 [English](README.md) · **Català** · [Español](README.es.md)
 
@@ -127,8 +127,36 @@ A 42, el següent pas és la **branca d'Intel·ligència Artificial**.
 
 ---
 
-## Eines
+## Tecnologies i conceptes
+
+Tot el que hi ha aquí surt als meus propis projectes. A l'esquerra hi ha l'àrea i a la dreta el que he fet servir de veritat i on.
+
+| Àrea | Tecnologies i conceptes |
+|:--|:--|
+| **Llenguatges de programació** | **C** (tot el Common Core de 42) · **C++** (ft_irc, mòduls de C++, mòduls de servidor de joc) · **Python** (Smart Routing, ciència de dades, visió per computador, laboratoris quàntics, bots) · **TypeScript / JavaScript** (aplicacions web, backends amb Node.js, jocs de navegador) · **Rust** (client asíncron amb verificació de signatures: tokio, reqwest, ring) · **Lua** i **GDScript** (scripts de jocs) · **Bash** (automatització i orquestració d'agents) · **SQL** |
+| **LLM locals i agents** | **Ollama** (Llama 3.2) · selecció de model i enrutament de peticions · orquestració multiagent · plantilles de rols d'agent · verificació creuada entre agents · contractes JSON estrictes entre agents · **Claude Code** · servidors **MCP** (Model Context Protocol) · enginyeria de prompts · APIs de LLM: **Anthropic Claude**, **Google Gemini** |
+| **Aprenentatge automàtic** | **scikit-learn** · clustering no supervisat (**K-Means**, **DBSCAN**) · **embeddings** amb sentence-transformers · similitud vectorial (distància cosinus) · **PyTorch** · timm · **Ultralytics YOLO** · grafs de coneixement (**Graphiti**, **FalkorDB**) |
+| **Visió per computador i 3D** | **OpenCV** · models de cos humà **SMPL-X** · trimesh · pyrender · PyOpenGL · captura per webcam · raycasting · **Three.js** |
+| **Dades i ciència** | **NumPy** · **Matplotlib** · **Jupyter** · **rasterio** (imatges de satèl·lit GeoTIFF) · Landsat i l'índex de vegetació **NDVI** · teledetecció · **Qiskit** / Qiskit Aer (números aleatoris quàntics, estats de Bell) · informes PDF amb ReportLab |
+| **Backend i APIs** | **Node.js** · **Express** · rutes d'API i server actions de **Next.js** · **Flask** · **APIs REST** · autenticació (**Auth.js / NextAuth**, bcrypt, **2FA TOTP**, codis per correu) · pagaments amb **Stripe** · correu amb Resend i Nodemailer · tasques programades (APScheduler) · generació de QR i PDF |
+| **Frontend** | **React** · **Next.js** (App Router) · **Tailwind CSS** · **Vite** · PWA (aplicacions sense connexió) · **Three.js** · Konva · Matter.js (física 2D) · mapes amb **MapLibre** i Leaflet · Zustand · webs multiidioma (i18n) |
+| **Bases de dades** | **PostgreSQL** · **MySQL / MariaDB** · **SQLite** · **Redis** (cues de tasques) · ORM **Prisma** · IndexedDB |
+| **Infraestructura i DevOps** | **Docker** i **Docker Compose** · contenidors d'un sol ús · imatges base compartides · **NGINX** amb TLS · Gunicorn · **Linux** (Debian, Ubuntu, WSL2) · màquines virtuals · **AWS S3** · **Vercel** · **GitHub Actions** · **Git** · Make i CMake |
+| **Proves i automatització** | **Playwright** · Puppeteer · proves end-to-end · web scraping · bots d'automatització |
+| **Conceptes de sistemes** | gestió de memòria i punters · processos (`fork`, `execve`) · pipes i redireccions · senyals · descriptors de fitxer · **fils i mutex** · condicions de carrera · **sockets i TCP/IP** · E/S no bloquejant (`poll`) · adreçament IP i subxarxes · algorismes i complexitat · programació orientada a objectes |
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,python,ts,bash,linux,docker,git,nextjs,postgres&perline=10" alt="C, C++, Python, TypeScript, Bash, Linux, Docker, Git, Next.js, PostgreSQL" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,py,ts,js,rust,lua,bash,linux,debian,ubuntu,cmake,git,github,githubactions&perline=15" alt="Languages and systems" /><br/>
+  <img src="https://skillicons.dev/icons?i=pytorch,sklearn,opencv,anaconda,flask,nodejs,express,nextjs,react,tailwind,vite,threejs,godot&perline=15" alt="AI, backend and frontend" /><br/>
+  <img src="https://skillicons.dev/icons?i=prisma,postgres,mysql,sqlite,redis,docker,nginx,aws,vercel,vscode&perline=15" alt="Data and infrastructure" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" alt="Ollama" />
+  <img src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white" alt="Claude" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini" />
+  <img src="https://img.shields.io/badge/Qiskit-6929C4?style=flat-square&logo=qiskit&logoColor=white" alt="Qiskit" />
+  <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" alt="Stripe" />
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" />
 </p>

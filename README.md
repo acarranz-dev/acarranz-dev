@@ -2,7 +2,7 @@
 
 # Andreu Carranza
 
-**AI R&D · Agentic systems · Systems programming at 42 Barcelona**
+**Software developer from 42 Barcelona. I build local, multi-agent AI systems, from C, Linux and networking up to LLM orchestration, embeddings and containerised infrastructure.**
 
 **English** · [Català](README.ca.md) · [Español](README.es.md)
 
@@ -125,8 +125,36 @@ At 42, the next step is the **Artificial Intelligence branch**.
 
 ---
 
-## Tools
+## Technologies and concepts
+
+Everything listed here appears in my own projects. The left column is the area, the right column is what I have actually used and where.
+
+| Area | Technologies and concepts |
+|:--|:--|
+| **Programming languages** | **C** (the whole 42 Common Core) · **C++** (ft_irc, C++ modules, game server modules) · **Python** (Smart Routing, data science, computer vision, quantum labs, bots) · **TypeScript / JavaScript** (web apps, Node.js backends, browser games) · **Rust** (async client with signature verification: tokio, reqwest, ring) · **Lua** and **GDScript** (game scripting) · **Bash** (automation and agent orchestration) · **SQL** |
+| **Local LLMs and agents** | **Ollama** (Llama 3.2) · model selection and request routing · multi-agent orchestration · agent role templates · cross-verification between agents · strict JSON contracts between agents · **Claude Code** · **MCP** (Model Context Protocol) servers · prompt engineering · LLM APIs: **Anthropic Claude**, **Google Gemini** |
+| **Machine learning** | **scikit-learn** · unsupervised clustering (**K-Means**, **DBSCAN**) · **embeddings** with sentence-transformers · vector similarity (cosine distance) · **PyTorch** · timm · **Ultralytics YOLO** · knowledge graphs (**Graphiti**, **FalkorDB**) |
+| **Computer vision and 3D** | **OpenCV** · **SMPL-X** human body models · trimesh · pyrender · PyOpenGL · webcam capture · raycasting · **Three.js** |
+| **Data and science** | **NumPy** · **Matplotlib** · **Jupyter** · **rasterio** (GeoTIFF satellite images) · Landsat and the **NDVI** vegetation index · remote sensing · **Qiskit** / Qiskit Aer (quantum random numbers, Bell states) · PDF reports with ReportLab |
+| **Backend and APIs** | **Node.js** · **Express** · **Next.js** API routes and server actions · **Flask** · **REST APIs** · authentication (**Auth.js / NextAuth**, bcrypt, **TOTP 2FA**, email codes) · payments with **Stripe** · email with Resend and Nodemailer · scheduled jobs (APScheduler) · QR and PDF generation |
+| **Frontend** | **React** · **Next.js** (App Router) · **Tailwind CSS** · **Vite** · PWA (offline apps) · **Three.js** · Konva · Matter.js (2D physics) · maps with **MapLibre** and Leaflet · Zustand · multi-language sites (i18n) |
+| **Databases** | **PostgreSQL** · **MySQL / MariaDB** · **SQLite** · **Redis** (task queues) · **Prisma** ORM · IndexedDB |
+| **Infrastructure and DevOps** | **Docker** and **Docker Compose** · short-lived containers · shared base images · **NGINX** with TLS · Gunicorn · **Linux** (Debian, Ubuntu, WSL2) · virtual machines · **AWS S3** · **Vercel** · **GitHub Actions** · **Git** · Make and CMake |
+| **Testing and automation** | **Playwright** · Puppeteer · end-to-end tests · web scraping · automation bots |
+| **Systems concepts** | memory management and pointers · processes (`fork`, `execve`) · pipes and redirections · signals · file descriptors · **threads and mutexes** · race conditions · **sockets and TCP/IP** · non-blocking I/O (`poll`) · IP addressing and subnetting · algorithms and complexity · object-oriented programming |
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,python,ts,bash,linux,docker,git,nextjs,postgres&perline=10" alt="C, C++, Python, TypeScript, Bash, Linux, Docker, Git, Next.js, PostgreSQL" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,py,ts,js,rust,lua,bash,linux,debian,ubuntu,cmake,git,github,githubactions&perline=15" alt="Languages and systems" /><br/>
+  <img src="https://skillicons.dev/icons?i=pytorch,sklearn,opencv,anaconda,flask,nodejs,express,nextjs,react,tailwind,vite,threejs,godot&perline=15" alt="AI, backend and frontend" /><br/>
+  <img src="https://skillicons.dev/icons?i=prisma,postgres,mysql,sqlite,redis,docker,nginx,aws,vercel,vscode&perline=15" alt="Data and infrastructure" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" alt="Ollama" />
+  <img src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white" alt="Claude" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini" />
+  <img src="https://img.shields.io/badge/Qiskit-6929C4?style=flat-square&logo=qiskit&logoColor=white" alt="Qiskit" />
+  <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" alt="Stripe" />
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" />
 </p>
