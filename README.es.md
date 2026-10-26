@@ -2,7 +2,7 @@
 
 # Andreu Carranza
 
-**Programador en C, C++ y Python formado en 42 Barcelona. Desarrollo sistemas donde varios agentes de IA colaboran entre sí.**
+**Programador en C, C++ y Python formado en 42 Barcelona. Diseño arquitecturas multiagente sobre LLM: descomposición de tareas, enrutado semántico y verificación cruzada entre agentes.**
 
 [English](README.md) · [Català](README.ca.md) · **Español**
 

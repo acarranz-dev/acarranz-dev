@@ -2,7 +2,7 @@
 
 # Andreu Carranza
 
-**Programador en C, C++ i Python format a 42 Barcelona. Desenvolupo sistemes on diversos agents d'IA col·laboren entre ells.**
+**Programador en C, C++ i Python format a 42 Barcelona. Dissenyo arquitectures multiagent sobre LLM: descomposició de tasques, enrutament semàntic i verificació creuada entre agents.**
 
 [English](README.md) · **Català** · [Español](README.es.md)
 

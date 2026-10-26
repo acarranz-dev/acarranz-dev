@@ -2,7 +2,7 @@
 
 # Andreu Carranza
 
-**C, C++ and Python developer trained at 42 Barcelona. I build systems where several AI agents work together.**
+**C, C++ and Python developer trained at 42 Barcelona. I design multi-agent architectures on top of LLMs: task decomposition, semantic routing and cross-verification between agents.**
 
 **English** · [Català](README.ca.md) · [Español](README.es.md)
 
