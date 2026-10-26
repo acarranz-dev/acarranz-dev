@@ -2,63 +2,133 @@
 
 # Andreu Carranza
 
-**Infraestructura agéntica · Programación de sistemas · 42 Barcelona**
+**I+D en IA · Sistemas agénticos · Programación de sistemas en 42 Barcelona**
 
 [English](README.md) · [Català](README.ca.md) · **Español**
 
 [![42 Barcelona](https://img.shields.io/badge/42-Barcelona-000000?style=for-the-badge&logo=42&logoColor=white)](https://www.42barcelona.com)
-[![Ubicación](https://img.shields.io/badge/Cataluña-ES-1f6feb?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
+[![Ubicación](https://img.shields.io/badge/Cataluña-España-1f6feb?style=for-the-badge)](#)
 [![Email](https://img.shields.io/badge/Email-contacto-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:andreucarranzagibert@gmail.com)
 
 </div>
 
 ---
 
-### 👋 Sobre mí
+## Sobre mí
 
-Construyo **infraestructura agéntica**: modelos de lenguaje pequeños y
-especializados que funcionan en local dentro de contenedores, orquestados para
-que, bien conectados, rindan como uno grande. Vengo del bajo nivel: C, C++,
-procesos de Linux, sockets y Docker, aprendido a la manera difícil en **42 Barcelona**.
+Soy desarrollador formado en **42 Barcelona**, una escuela entre iguales sin
+profesores ni clases: cada habilidad se aprende construyendo proyectos y
+haciendo que otros estudiantes los revisen. Eso me ha dado una base sólida de
+bajo nivel en C, C++, Linux, procesos, redes y Docker.
 
-🎯 Abierto a puestos de **infraestructura de IA y operaciones de centros de datos**.
-
----
-
-### 🎓 42 Barcelona
-
-| Proyecto | Qué es | Stack |
-|:--|:--|:--|
-| 🌐 [**ft_irc**](https://github.com/acarranz-dev/ft_irc) | Servidor IRC con varios clientes y canales (proyecto en equipo) | `C++98` `sockets` `poll` |
-| 🐳 [**inception**](https://github.com/acarranz-dev/inception) | Infraestructura NGINX + WordPress + MariaDB, cada servicio en su contenedor | `Docker` `docker-compose` |
-| 🐚 [**minishell**](https://github.com/acarranz-dev/minishell) | Shell tipo Bash: parsing, pipes, redirecciones y señales | `C` `POSIX` |
-| 🧠 [**philosophers**](https://github.com/acarranz-dev/philosophers) | Filósofos comensales: hilos, mutex y concurrencia | `C` `pthreads` |
-| ⚙️ [**cpp-modules**](https://github.com/acarranz-dev/cpp-modules) | Módulos de C++ 00–09: POO, templates y STL | `C++` |
-| 🎮 [**cube3D**](https://github.com/acarranz-dev/cube3D) | Motor 3D por raycasting inspirado en Wolfenstein 3D | `C` `MLX42` |
-| 🕹️ [**solong**](https://github.com/acarranz-dev/solong) | Juego 2D con vista cenital | `C` `MLX42` |
-| 📊 [**push_swap**](https://github.com/acarranz-dev/push_swap) | Ordenar una pila con el mínimo de operaciones | `C` `algoritmos` |
-| 📚 [get_next_line](https://github.com/acarranz-dev/get_next_line) · [ft_printf](https://github.com/acarranz-dev/ft_printf) · [libft](https://github.com/acarranz-dev/libft) | Mi propia librería estándar de C | `C` |
+Ahora me centro en la **investigación y el desarrollo aplicado en IA**: conseguir
+que modelos de lenguaje pequeños que funcionan en local trabajen juntos, que
+cada petición vaya al modelo adecuado y que se verifiquen entre ellos. Mi
+objetivo es trabajar en **infraestructura de IA y operaciones de centros de
+datos**, donde se encuentran el bajo nivel y la IA.
 
 ---
 
-### 🤖 Infraestructura agéntica
+## Proyectos principales
 
-- **SmartRouting**: bots con LLM locales sobre **Ollama**, con selección de modelo y enrutamiento entre modelos.
-- **Agent swarm**: agentes en contenedores **Docker** desechables sobre una imagen base común, que se reparten una tarea entre modelos pequeños y especializados.
+### Smart Routing
+**Una herramienta de línea de comandos para ejecutar y enrutar modelos de lenguaje locales.**
+Funciona sobre [Ollama](https://ollama.com), así que todo va sin conexión en tu
+propia máquina. Creas bots, das a cada uno un rol y un modelo, y la CLI envía
+cada petición al que corresponde. Incluye 12 perfiles de agente (desarrollador,
+depurador, investigador, redactor técnico, etc.) y 7 modos de "pensamiento
+profundo" (planificación, debate, depuración de errores, razonamiento paso a
+paso) que hacen una pasada de análisis antes de la respuesta final.
 
-<sub>🔒 Repositorios privados, disponibles para enseñar en una entrevista.</sub>
+`Python` `Ollama` `LLM` `CLI` · Estado: terminando la v1.0
+
+### Infraestructura agéntica
+**Una red de agentes de IA, cada uno dentro de su propio contenedor Docker desechable.**
+En lugar de un modelo grande que lo hace todo, un orquestador central divide la
+petición en subtareas pequeñas. Cada subtarea se convierte en un vector
+(embedding), los vectores se agrupan con k-means y cada grupo se convierte en
+una rama de un árbol de agentes. Los agentes se intercambian resultados con un
+contrato JSON estricto, un agente verificador revisa el trabajo de los demás, y
+cada contenedor se destruye al terminar su tarea, de forma que siempre trabaja
+con un contexto pequeño y limpio.
+
+`Docker` `Redis` `Embeddings` `k-means` `Multiagente` · Estado: en desarrollo
+
+### Green Islands
+**Detección de zonas verdes urbanas a partir de imágenes de satélite.**
+Usa imágenes Landsat y el índice de vegetación NDVI para medir cuánta vegetación
+tiene cada zona, y después agrupa las zonas con clustering no supervisado
+(K-Means y DBSCAN) para encontrar "islas verdes" dentro de las ciudades. Incluye
+una pequeña aplicación web para explorar y presentar los resultados.
+
+`Python` `Jupyter` `scikit-learn` `Teledetección` · Estado: documentando el clustering
+
+### Political NLP
+**Análisis del discurso político con procesamiento del lenguaje natural.**
+
+`Python` `NLP` · Estado: refactorizando y preparando un ejemplo claro
+
+<sub>Estos repositorios de momento son privados y puedo enseñarlos en una entrevista.</sub>
 
 ---
 
-### 🧪 Demos
+## 42 Barcelona: Common Core
 
-Aplicaciones web y experimentos: sistemas de reservas, escaneo corporal 3D con
-webcam, análisis de datos geoespaciales y juegos. Hechos con **Next.js**, **Python** y **Godot**.
+El Common Core es la parte obligatoria del currículum de 42. Se organiza en
+**rangos del 0 al 6**. Cada rango tiene unos proyectos y, a partir del rango 2,
+un examen en el que programas solo, sin internet y con tiempo limitado. Cada
+proyecto lo revisan otros estudiantes y un sistema de tests automáticos (la
+"Moulinette"). Terminar el Common Core es el paso previo a elegir una
+especialización, como la rama de IA.
+
+| Rango | Proyecto | Qué enseña | Repo |
+|:--:|:--|:--|:--|
+| 0 | **libft** | Reescribir las funciones básicas de la librería estándar de C: memoria, cadenas, listas enlazadas | [libft](https://github.com/acarranz-dev/libft) |
+| 1 | **ft_printf** | Recrear `printf`: funciones variádicas y formato de salida | [ft_printf](https://github.com/acarranz-dev/ft_printf) |
+| 1 | **get_next_line** | Leer un fichero línea a línea: descriptores de fichero, buffers y variables estáticas | [get_next_line](https://github.com/acarranz-dev/get_next_line) |
+| 1 | **Born2beroot** | Montar un servidor Debian seguro en una máquina virtual: usuarios, cortafuegos, SSH | — |
+| 2 | **push_swap** | Ordenar números con dos pilas y el mínimo de movimientos: algoritmos y complejidad | [push_swap](https://github.com/acarranz-dev/push_swap) |
+| 2 | **so_long** *(o fdf / fract-ol)* | Un pequeño juego 2D: bucle gráfico, eventos y texturas | [solong](https://github.com/acarranz-dev/solong) |
+| 2 | **pipex** *(o minitalk)* | Recrear las pipes de la shell con `fork`, `pipe` y `execve` | — |
+| 3 | **minishell** | Una shell funcional como Bash: parsing, pipes, redirecciones, variables de entorno y señales | [minishell](https://github.com/acarranz-dev/minishell) |
+| 3 | **philosophers** | El problema de los filósofos comensales: hilos, mutex y condiciones de carrera | [philosophers](https://github.com/acarranz-dev/philosophers) |
+| 4 | **cub3D** *(o miniRT)* | Un motor 3D por raycasting, como Wolfenstein 3D: matemáticas, renderizado y colisiones | [cube3D](https://github.com/acarranz-dev/cube3D) |
+| 4 | **NetPractice** | Configurar redes pequeñas: direcciones IP, máscaras de subred y enrutamiento | — |
+| 4 | **Módulos C++ 00–04** | Programación orientada a objetos: clases, referencias, sobrecarga de operadores, herencia, polimorfismo | [cpp-modules](https://github.com/acarranz-dev/cpp-modules) |
+| 5 | **Módulos C++ 05–09** | Excepciones, casts, templates, contenedores y la STL | [cpp-modules](https://github.com/acarranz-dev/cpp-modules) |
+| 5 | **Inception** | Una pequeña infraestructura con Docker Compose: NGINX con TLS, WordPress y MariaDB, cada uno en su contenedor | [inception](https://github.com/acarranz-dev/inception) |
+| 5 | **ft_irc** *(o webserv)* | Un servidor IRC en C++98: sockets, E/S no bloqueante con `poll` y muchos clientes a la vez | [ft_irc](https://github.com/acarranz-dev/ft_irc) |
+| 6 | **ft_transcendence** | Una aplicación web completa en equipo: juego multijugador en tiempo real, autenticación y seguridad | — |
+
+<sub>Los proyectos en *cursiva* indican las alternativas entre las que se puede
+elegir. "—" significa que el proyecto no está publicado en GitHub.</sub>
 
 ---
 
-### 🛠️ Herramientas
+## Qué estoy aprendiendo
+
+| Curso | Plataforma | Para qué | Estado |
+|:--|:--|:--|:--|
+| **Python PCAP** (Certified Associate in Python Programming) | Python Institute / Edube | Python avanzado: módulos, POO, excepciones | En curso |
+| **Hugging Face NLP Course** | Hugging Face | Fine-tuning con PEFT / LoRA y cuantización de modelos | El siguiente |
+| **NLP Specialization** | DeepLearning.AI (Coursera) | Las matemáticas de los embeddings y los espacios vectoriales | Previsto |
+| **Building Transformer-Based Applications** | NVIDIA Deep Learning Institute | Arquitectura Transformer | Previsto |
+
+En 42, el siguiente paso es la **rama de Inteligencia Artificial**.
+
+---
+
+## Otros trabajos
+
+- **Webs de clientes en producción**: sistemas de reservas para negocios con
+  cita previa, una tienda online y la web de un escritor, hechas con Next.js.
+- **Demos y experimentos**: escaneo corporal 3D con webcam, un monitor del
+  mercado de Steam, juegos de navegador y prototipos con Godot.
+
+---
+
+## Herramientas
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,python,ts,bash,linux,docker,git,nextjs,postgres&perline=10" alt="Herramientas" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,python,ts,bash,linux,docker,git,nextjs,postgres&perline=10" alt="C, C++, Python, TypeScript, Bash, Linux, Docker, Git, Next.js, PostgreSQL" />
 </p>
